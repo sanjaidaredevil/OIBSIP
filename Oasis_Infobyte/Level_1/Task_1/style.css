@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f8f9fa;
+    color: #1a1a1a;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 40px;
+    background: #fff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+/* Desktop Nav */
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.btn-primary {
+    background: #0c9b61;
+    color: white;
+    padding: 10px 22px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.btn-primary:hover {
+    background: #087a4c;
+}
+
+/* Mobile menu icon */
+.menu-icon {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+/* HERO */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 50px;
+    background: #eefcf4;
+    flex-wrap: wrap;
+}
+
+.hero-text {
+    max-width: 45%;
+}
+
+.hero-text h1 {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.hero-img img {
+    width: 430px;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* FEATURES */
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 60px 30px;
+    background: #ffffff;
+    flex-wrap: wrap;
+}
+
+.feature {
+    text-align: center;
+    width: 30%;
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+
+.feature img {
+    width: 90px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* WORLD SECTION */
+.world {
+    padding: 60px 30px;
+    background: #ffeef3;
+    text-align: center;
+}
+
+.world-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.map {
+    width: 55%;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.world-stats {
+    margin-top: 20px;
+}
+
+.world-stats div {
+    margin-bottom: 20px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #fff;
+    margin-top: 40px;
+    font-size: 14px;
+    color: #555;
+}
+
+/* ---------------------------- */
+/*        MOBILE VIEW           */
+/* ---------------------------- */
+
+@media (max-width: 768px) {
+    /* Header */
+    nav {
+        display: none;
+        flex-direction: column;
+        background: white;
+        width: 100%;
+        position: absolute;
+        top: 65px;
+        left: 0;
+        padding: 15px 0;
+        text-align: center;
+    }
+
+    nav.open {
+        display: flex;
+    }
+
+    .desktop-btn {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    /* Hero */
+    .hero {
+        padding: 40px 20px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text {
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+
+    /* Features */
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature {
+        width: 90%;
+    }
+
+    /* World Section */
+    .world-content {
+        flex-direction: column;
+    }
+
+    .map {
+        width: 100%;
+    }
+}
