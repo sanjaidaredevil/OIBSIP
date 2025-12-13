@@ -1,0 +1,262 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+body {
+  background: #fff8f0;
+  color: #111827;
+  scroll-behavior: smooth;
+} /* Navbar */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  padding: 20px 50px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  z-index: 1000;
+}
+nav a {
+  color: #111827;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+}
+nav a:hover {
+  color: #ffd700;
+} /* Hero Section */
+#home {
+  background: linear-gradient(135deg, #ffd700, #fff8f0);
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 0 0 50% 50% / 20%;
+}
+#home h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+#home p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+}
+#home a.button {
+  background: #ffd700;
+  color: #111827;
+  padding: 14px 30px;
+  border-radius: 40px;
+  font-weight: bold;
+  box-shadow: 0 8px 25px rgba(255, 215, 0, 0.4);
+  transition: all 0.3s ease;
+}
+#home a.button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 35px rgba(255, 215, 0, 0.5);
+} /* Skills Section */
+#skills {
+  background: #fffbe6;
+  text-align: center;
+  border-radius: 25px;
+  padding: 80px 50px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.skill {
+  background: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  width: 150px;
+  font-weight: 600;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(255, 215, 0, 0.2);
+  transition: all 0.3s ease;
+}
+.skill:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(255, 215, 0, 0.4);
+} /* Projects Section */
+#projects {
+  text-align: center;
+  background: #fff;
+  border-radius: 25px;
+  padding: 80px 50px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+}
+.project {
+  background: #fff8f0;
+  border-radius: 20px;
+  overflow: hidden;
+  width: 300px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 20px rgba(255, 215, 0, 0.2);
+}
+.project img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.project-content {
+  padding: 15px;
+  font-weight: 500;
+}
+.project:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 25px rgba(255, 215, 0, 0.4);
+} /* Certificates Section */
+#certificates {
+  background: #fffbe6;
+  text-align: center;
+  border-radius: 25px;
+  padding: 80px 50px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+.certificates-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.certificate {
+  background: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  width: 250px;
+  box-shadow: 0 4px 15px rgba(255, 215, 0, 0.2);
+  transition: all 0.3s ease;
+}
+.certificate img {
+  width: 100%;
+  border-radius: 15px;
+}
+.certificate:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(255, 215, 0, 0.4);
+} /* Contact Section */
+#contact {
+  background: #fff;
+  text-align: center;
+  border-radius: 25px;
+  padding: 80px 50px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+#contact form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+#contact input,
+#contact textarea {
+  padding: 14px;
+  border-radius: 15px;
+  border: 1px solid #ffd700;
+  width: 100%;
+}
+#contact button {
+  background: #ffd700;
+  color: #111827;
+  padding: 14px;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 8px 25px rgba(255, 215, 0, 0.4);
+  transition: all 0.3s ease;
+}
+#contact button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 35px rgba(255, 215, 0, 0.5);
+} /* Footer */
+footer {
+  background: #fff;
+  color: #111827;
+  text-align: center;
+  padding: 20px 0;
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.05);
+} /* Padding for fixed navbar */
+section {
+  padding-top: 100px;
+} /* Responsive */
+@media (max-width: 1024px) {
+  .projects-container,
+  .certificates-container,
+  .skills-container {
+    justify-content: center;
+  }
+}
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+  }
+  #home h1 {
+    font-size: 2.5rem;
+  }
+} /* Container to center the circular image */
+.profile-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+} /* Circular frame */
+.profile-circle {
+  width: 150px; /* size of the circle */
+  height: 150px;
+  border-radius: 50%; /* perfect circle */
+  overflow: hidden; /* hide image outside circle */
+  border: 2px solid #ffd700;
+  box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
+} /* Image inside the circle */
+.profile-circle img {
+  width: 100%; /* image fills the circle */
+  height: 100%;
+  object-fit: cover; /* maintains aspect ratio, covers the circle */
+  display: block;
+  transition: transform 0.3s ease;
+}
+.profile-circle img:hover {
+  transform: scale(1.1); /* subtle zoom on hover */
+}
+#certificates-section {
+  padding: 60px 20px;
+  background: linear-gradient(
+    to right,
+    #fff9e6,
+    #fff3b0
+  ); /* same yellow-white gradient */
+  text-align: center;
+}
+.cert {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #333; /* consistent heading color */
+  font-weight: 600;
+} /* Make carousel images smaller and uniform */
+#carouselExampleAutoplaying .carousel-item img {
+  height: 250px; /* Fixed height */
+  object-fit: contain; /* Maintain aspect ratio */
+  margin: 0 auto; /* Center horizontally */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
