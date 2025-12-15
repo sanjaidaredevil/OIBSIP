@@ -91,7 +91,7 @@ h2 {
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
-/* Pending = Zomato Red border */
+/* Pending =  Red border */
 .task {
   border-left: 5px solid #E23744;
 }
@@ -112,7 +112,7 @@ h2 {
   font-size: 14px;
 }
 
-/* Zomato-style button colors */
+/* button colors */
 .complete-btn { background: #2ecc71; color: white; }
 .edit-btn { background: #f1c40f; }
 .delete-btn { background: #e21313; color: white; }
