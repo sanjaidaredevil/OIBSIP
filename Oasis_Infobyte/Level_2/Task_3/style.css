@@ -1,0 +1,125 @@
+/* ---------- GLOBAL ---------- */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f8f8f8;
+  margin: 0;
+  padding: 0;
+}
+
+/* ---------- CONTAINER ---------- */
+.container {
+  width: 90%;
+  max-width: 650px;
+  margin: 40px auto;
+  background: #ffffff;
+  padding: 30px 35px;
+  border-radius: 18px;
+  box-shadow: 0 6px 28px rgba(0,0,0,0.12);
+}
+
+/* ---------- HEADING ---------- */
+h1 {
+  text-align: center;
+  color: #E23744;
+  font-size: 32px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+h2 {
+  color: #1c1c1c;
+  font-size: 22px;
+  margin-top: 30px;
+}
+
+/* ---------- INPUT BOX ---------- */
+.input-box {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.input-box input {
+  flex: 1;
+  padding: 14px 18px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+}
+
+.input-box input:focus {
+  border-color: #E23744;
+  outline: none;
+}
+
+.input-box button {
+  padding: 14px 25px;
+  background: #E23744;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.input-box button:hover {
+  background: #c72231;
+}
+
+/* ---------- TASK LISTS ---------- */
+.task-list {
+  padding: 0;
+  list-style: none;
+}
+
+/* ---------- TASK CARD ---------- */
+.task {
+  background: #fff;
+  padding: 15px 18px;
+  margin-bottom: 12px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border: 1px solid #eee;
+  transition: 0.25s ease-in-out;
+}
+
+.task:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* Pending = Zomato Red border */
+.task {
+  border-left: 5px solid #E23744;
+}
+
+/* Completed = Green border */
+.task.completed {
+  background: #f1fff1;
+  border-left: 5px solid #2ecc71;
+}
+
+/* ---------- BUTTONS ---------- */
+.buttons button {
+  margin-left: 8px;
+  padding: 6px 12px;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+/* Zomato-style button colors */
+.complete-btn { background: #2ecc71; color: white; }
+.edit-btn { background: #f1c40f; }
+.delete-btn { background: #e21313; color: white; }
+
+/* ---------- TIMESTAMP ---------- */
+.timestamp {
+  font-size: 12px;
+  color: #666;
+  margin-top: 5px;
+}

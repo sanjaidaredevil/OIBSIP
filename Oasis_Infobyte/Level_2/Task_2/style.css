@@ -83,8 +83,8 @@ footer {
 
 /* SHAPES CONTAINER */
 .container {
-    position: relative;      /* Needed for shapes */
-    overflow: hidden;        /* So shapes don't stick outside */
+    position: relative;     
+    overflow: hidden;        
 }
 
 /* ANIMATED BACKGROUND SHAPES */
@@ -150,7 +150,7 @@ footer {
         transparent 100%
     );
 
-    /* VERY VERY SMALL CURVE (perfect premium look) */
+    /* perfect premium look curve */
     clip-path: inset(0 0 0 0 round 50% 50% / 60% 60%);
     
     /* LIGHT GLOW */
