@@ -1,0 +1,57 @@
+.pizza-builder {
+  max-width: 700px;
+  margin: auto;
+  padding: 30px;
+}
+
+.pizza-builder h2 {
+  text-align: center;
+  color: var(--red-primary);
+  margin-bottom: 25px;
+}
+
+.builder-section {
+  background: var(--white);
+  padding: 20px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-soft);
+  margin-bottom: 20px;
+}
+
+.builder-section h4 {
+  margin-bottom: 12px;
+}
+
+.option-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.option {
+  padding: 10px 16px;
+  border: 1px solid var(--border-light);
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.option.active {
+  background: var(--red-primary);
+  color: white;
+  border-color: var(--red-primary);
+}
+
+.pay-btn {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(
+    135deg,
+    var(--red-primary),
+    var(--accent-orange)
+  );
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 10px;
+}

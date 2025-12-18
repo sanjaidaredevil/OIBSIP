@@ -1,0 +1,22 @@
+:root {
+  /* 🔴 Primary Brand */
+  --red-primary: #E23744;
+  --red-dark: #C62835;
+  --red-light: #FFF1F2;
+
+  /* 🟠 Accent */
+  --accent-orange: #FF7A18;
+
+  /* ⚫ Text */
+  --text-dark: #1C1C1C;
+  --text-muted: #6B7280;
+
+  /* ⚪ Background */
+  --bg-light: #FAFAFA;
+  --white: #FFFFFF;
+
+  /* 🧱 UI */
+  --border-light: #E5E7EB;
+  --shadow-soft: 0 10px 25px rgba(0,0,0,0.08);
+  --radius: 12px;
+}
